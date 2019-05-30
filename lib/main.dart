@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'Custom_Icons.dart';
+import 'Product_Details.dart';
 import 'data.dart';
 
 void main() => runApp(MaterialApp(
-      home: MyApp(),
-      debugShowCheckedModeBanner: false,
-    ));
+  home: MyApp(),
+  debugShowCheckedModeBanner: false,
+));
 
 class MyApp extends StatefulWidget {
   @override
@@ -86,7 +87,7 @@ class _MyAppState extends State<MyApp> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: SizedBox(
-                  height: height * .6,
+                  height: height * .7,
                   child: ListView.builder(
                     itemCount: images.length,
                     scrollDirection: Axis.horizontal,
@@ -113,7 +114,7 @@ class _MyAppState extends State<MyApp> {
                                             blurRadius: 10.0)
                                       ],
                                       borderRadius:
-                                          BorderRadius.circular(12.0)),
+                                      BorderRadius.circular(12.0)),
                                 ),
                               ),
                               Column(
@@ -122,7 +123,7 @@ class _MyAppState extends State<MyApp> {
                                   Image.asset(
                                     images[index],
                                     width: 172.5,
-                                    height: 199.0,
+                                    height: 170.0,
                                   ),
                                   SizedBox(
                                     height: 12.0,
@@ -131,7 +132,7 @@ class _MyAppState extends State<MyApp> {
                                     padding: EdgeInsets.all(12.0),
                                     child: Column(
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(title[index],
                                             style: TextStyle(
